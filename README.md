@@ -9,7 +9,14 @@ This intends to be used as testing and quality checks of results for UniDoc AI m
 - Go 1.20 or later
 - UniCLOUD API Key
 
-### Running The Client
+Copy the `.env.example` file to `.env` and fill the configs.
 ```bash
-go run main.go <pdf_file_path> <output_directory> <prompt>
+cp .env.example .env
 ```
+
+### Example Usage
+To run the client, use the following command:
+```bash
+go run main.go uniai --prompt "What is the main topic of this document?" --file path/to/your/document.pdf --output "output/directory"
+```
+
